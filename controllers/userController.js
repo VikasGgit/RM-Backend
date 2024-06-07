@@ -1,5 +1,5 @@
 import { errorHandler } from "../middlewares/errormiddleware.js";
-import { catchAsyncError } from "../middlewares/catchasyncErrors.js";
+import catchAsyncError from "../middlewares/catchAsyncErrors.js";
 import { User } from "../models/userSchema.js";
 import { generateToken} from "../utils/jwtToken.js"
 import cloudinary from "cloudinary";

@@ -1,5 +1,6 @@
-export const catchAsyncError=(theErr)=>{
+const catchAsyncError=(theErr)=>{
     return (req, res, next) => {
         Promise.resolve(theErr(req, res, next)).catch(next)
     };
 }
+export default catchAsyncError;
